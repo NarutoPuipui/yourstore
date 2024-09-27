@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Times New Roman, Times, serif;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #7AE4E8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+}
+nav ul li button,button  {
+    height: 33px;
+    background-color: #ffff;
+    color: #7AE4E8;
+    font-size: small;
+    padding: 4px 12px;
+    border-radius: 10px;
+    border: none;
+   
+}
+.search{
+    width: max(100px, 40vw);
+    display: flex;
+    align-items: center;
+
+}
+nav input{
+    background-color: white;
+    width: 100%;
+    padding: 8px 10px 8px 12px;
+    border: none;
+}
+nav input::placeholder{
+    color: #7AE4E8;
+    font-weight: bold;
+}
+
+.search span
+{
+    position: relative;
+    right: 30px;
+    color: #7AE4E8;
+    
+}
+
+.lipstick{
+    height: 70vh;
+    background-image: url("/modern-pink-flowing-wave-banner-vector.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.lipstick .lipstick-content h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.lipstick .lipstick-content h6{
+    font-size: 20px;
+    font-weight: 300;
+}
+.lipstick-content{
+    color: rgb(195, 95, 111);
+    
+}
+.lip{
+    background-image: url("/th.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.perfume{
+    background-image: url("/abstract-polygonal-banner-background-vector.jpg") ;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.perfume .tagline{
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    max-width: 40vw;
+    
+}
+.perfume .off{
+  
+    background-image: url("/perfume.jpg");
+    background-size: cover;
+    height: 200px ;
+    width: 200px;
+    border-radius: 50%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 700;
+    
+}
+
+.footer{
+    background-color: #7AE4E8;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: 700;
+    
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .lipstick, .perfume {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .lipstick .lipstick-content h1, .perfume .tagline {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .lipstick .lipstick-content h6, .perfume .tagline {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .lip, .perfume .off {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+    
+    .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .lipstick, .perfume {
+        padding: 10px;
+    }
+    
+    .lipstick .lipstick-content h1, .perfume .tagline {
+        font-size: 24px;
+    }
+    
+    .lipstick .lipstick-content h6, .perfume .tagline {
+        font-size: 14px;
+    }
+}
+
+
+
